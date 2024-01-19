@@ -121,6 +121,72 @@ root.render(<HeadingComponent />);
 JSX provide the feature to run any js code inside component enclosed within curly brackets{}
 
 
+import React from "react";
+import  ReactDOM  from "react-dom/client";
+
+
+/**
+ * 
+ * Header
+ *      logo
+ *      navitems
+ * body
+ *      search bar
+ *      restra container
+ *          restra card
+ * 
+ * footer
+ *      Copyright 
+ *      Disclaimer
+ *      Link
+ */
+
+const Title = () => 
+    (
+        <h1 className="title" tabIndex="5">
+                    React World is full of component !!!!!!
+                </h1>
+    )
+
+const numb = 10000;
+
+// react element
+const elem = <span>React Span</span>
+
+const brandName = (
+    <h1 className="brandname"> BrandName {elem}</h1>
+)
+
+const HeadingComponent = () =>(
+    <div id="container">
+        {Title()}
+        <Title></Title>
+        {brandName}
+        <h1 className="heading">hellow functional componnet</h1>
+    </div>
+);
+
+// we can also use normal function
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+root.render(
+<HeadingComponent />
+);
+
 
 <!-- Episode 4 -->
+
+Props short form of property
+props is are just normal argument to a function
+passing a props to a component is just like passing a argument to a function
+
+when we have to pass data dynamically we can pass it as props.
+
+
+config driven UI used by swiggy
+
+why we should use key in map function?
+we should key in map because to uniquly define the data which help in enhancing the re rendering of data .
+react says that never use index as keys (bad practise) it may affect the data serialization pattern
 
