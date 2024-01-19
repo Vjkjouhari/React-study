@@ -116,3 +116,11 @@ const HeadingComponent = () =>(
 );
 we can render it using 
 root.render(<HeadingComponent />);
+
+
+JSX provide the feature to run any js code inside component enclosed within curly brackets{}
+
+
+
+<!-- Episode 4 -->
+
