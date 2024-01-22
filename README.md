@@ -190,3 +190,90 @@ why we should use key in map function?
 we should key in map because to uniquly define the data which help in enhancing the re rendering of data .
 react says that never use index as keys (bad practise) it may affect the data serialization pattern
 
+ep-05====================
+/**
+ * 
+ * Header
+ *      logo
+ *      navitems
+ * body
+ *      search bar
+ *      restra container
+ *          restra card
+ * footer
+ *      Copyright 
+ *      Disclaimer
+ *      Link
+ */
+
+
+ how to react works using parcel? must read
+
+
+
+ there are two types of exports and imports
+ 1 default export import
+    export default (name of variable)
+    import (name of variable) from (path)
+
+2 named export import
+    export const component = () =>{
+
+    }
+
+    import {component} from path
+
+
+if we want to exports multiple variable we will use name export
+     export default {var1, var2, var3}
+
+
+React is fast in DOM Manipulation & efficient in dom manipulation
+
+Hooks
+it is normal js utility function which is provided by react 
+it comes with logic which work behind the scene
+2 important hooks
+- useState():- use to generate state variable in react
+- useEffect()
+
+why we call state variable because it maintain the state 
+wehenever state variable change react will re render the compnent
+
+react behind the scene as soon as state changes react remove the body and update UI
+
+react is good at dom manipulation
+
+
+
+react working behind the scene
+React uses RECONCILIATION ALGORITHM (also know as REACT FIBER)
+
+on the UI we have DOM 
+
+virtualDOM is not an actual dom  it is just a represation of actual DOM.
+actual Dom are nothing but <div></div>
+
+<-- EP 6-->
+
+Monolith and microservice architecture
+
+two apporaches to interact with api in react
+1 - when app load and as soon as app load we call api and get data then we render the UI
+2 - as soon as page load we will jst render UI now we will make api call and as soon as we  get data from api we will again load the data and render it again
+
+2nd approach is better because this gives us a better UX
+
+
+we can use CORS if we want to deal with any hosted api on localhost else it will throw error because of CORS policy because of origin mismatch it will throw an error
+
+though we can use it using CORS chrome Extension
+
+
+shimmer UI this is used to show a fake cards till data is loaded
+
+
+whenever we state variable update react triggers a reconciliation cycle(re-render the component) but it is only updating the particular state variable where change provided;
+
+virtual DOM is object representation of HTML CSS and JS
+why do we need to create state variable?
