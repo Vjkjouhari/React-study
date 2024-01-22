@@ -277,3 +277,42 @@ whenever we state variable update react triggers a reconciliation cycle(re-rende
 
 virtual DOM is object representation of HTML CSS and JS
 why do we need to create state variable?
+
+===============
+
+EP-7
+
+useEffect  is called using two argument ist is callbaack and another one is dependency array
+useEffect(()=>{
+
+},[])
+=========
+useEffect is called after every time my component render if empty dependency array
+example:
+empty dependency array
+useEffect(()=>{
+
+})
+
+this will be only called on only initial render and render jst once when page is reneder 
+================
+if dependency array is present then useeffect will be called every time on anyarray reaction
+ex:
+useEffect(()=>{
+
+},[anyarray])
+
+dependency array 
+
+=========
+
+REACT ROUTER DOM
+
+npm i react-router-dom
+
+never use anchor tag because whole page gets refreshed to stop the refreshing and navigate to another page or different route without reloading we can use link instead of anchor tag this is why react is known as singlePage Application
+
+two types of routing in web apps:-
+Client Side routing react is client side routing because its not geting reload & server side routing it get reload and load the page
+
+

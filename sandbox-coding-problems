@@ -1,0 +1,41 @@
+// import { useState } from "react";
+// import "./styles.css";
+
+// export default function App() {
+//   const [counterValue, setCounterValue] = useState([]);
+//   ============================================= random number test
+//   const [userValue, SetUserValue] = useState([]);
+//   return (
+//     <div className="App">
+//       <h1>Counter</h1>
+//       <input
+//         type="text"
+//         className="counter"
+//         value={userValue}
+//         onChange={(e) => {
+//           SetUserValue(e.target.value);
+//         }}
+//       />
+
+//       <input type="text" className="check-guess" value={counterValue} />
+
+//       <p>Enter any double digit number To see your guessed right or not</p>
+//       <button
+//         className="btnhit"
+//         onClick={() => {
+//           const randNumb = Math.floor(Math.random() * 90);
+//           setCounterValue(randNumb);
+//           if (randNumb === userValue) {
+//             alert("winnnnnn");
+//           }
+//           alert("you loosse");
+//         }}
+//         readOnly
+//       >
+//         Hit me to check And win
+//       </button>
+//       <h2>Start editing to see some magic happen!</h2>
+//     </div>
+//   );
+// }
+// ========================================================
